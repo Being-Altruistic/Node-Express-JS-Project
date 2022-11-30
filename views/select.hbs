@@ -1,0 +1,38 @@
+<html>
+    <head> <h1>Welcome to Inventory </h1>
+    <style>
+
+        table, th, td {
+            border:1px solid
+        }
+    </style>
+    </head>
+<body>
+    <h3> SELECT AN OPERATION TO SIMULATE </h3>
+
+     <table>
+    <tr>
+        <th>
+            item_id
+        </th>
+        <th>
+            item
+        </th>
+        <th>
+            Qty
+        </th>
+    </tr>
+
+    {{#each result}}      
+
+    <tr>
+        <td> {{this.item_id}}</td>
+        <td>{{this.item}}</td>
+        <td>{{this.qty}}</td>
+    </tr>
+    
+    {{/each}}
+ 
+ </table> 
+    </body>
+    </html>
